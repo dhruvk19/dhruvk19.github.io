@@ -1,4 +1,4 @@
-// Page navigation system with URL routing
+// Page navigation system with URL routing - No fetch required
 class PortfolioApp {
     constructor() {
         this.currentPage = 'home';
@@ -9,23 +9,14 @@ class PortfolioApp {
         this.init();
     }
 
-    async init() {
-        // Load the home page component immediately
-        await this.loadInitialPage();
-        
+    init() {
         // Set up event listeners
         this.setupEventListeners();
         
         // Set up browser history
         this.setupHistory();
-    }
-
-    async loadInitialPage() {
-        // Always load home page first
-        const homeComponent = await this.loadComponent('home');
-        this.pageContainer.innerHTML = homeComponent;
         
-        // Now load the page based on URL
+        // Load page from URL on initial load
         this.loadPageFromURL();
     }
 
@@ -85,24 +76,6 @@ class PortfolioApp {
         }
     }
 
-    async loadComponent(pageName) {
-        try {
-            const response = await fetch(`components/${pageName}.html`);
-            if (!response.ok) {
-                throw new Error(`Failed to load ${pageName} component`);
-            }
-            return await response.text();
-        } catch (error) {
-            console.error('Error loading component:', error);
-            return `<div class="page ${pageName}-page" id="${pageName}">
-                <div class="container">
-                    <h2>${pageName}</h2>
-                    <p>Error loading content.</p>
-                </div>
-            </div>`;
-        }
-    }
-
     getPageDirection(fromPage, toPage) {
         const fromIndex = this.pageOrder.indexOf(fromPage);
         const toIndex = this.pageOrder.indexOf(toPage);
@@ -115,7 +88,7 @@ class PortfolioApp {
         return 'none'; // Same page or home
     }
 
-    async showPage(pageName, updateURL = true) {
+    showPage(pageName, updateURL = true) {
         if (this.currentPage === pageName) return;
         
         const direction = this.getPageDirection(this.currentPage, pageName);
@@ -127,17 +100,14 @@ class PortfolioApp {
             this.header.classList.add('subpage', 'show');
         }
         
-        // Load component if not already loaded
-        const existingPage = document.getElementById(pageName);
-        if (!existingPage) {
-            const componentHTML = await this.loadComponent(pageName);
-            this.pageContainer.insertAdjacentHTML('beforeend', componentHTML);
-        }
-        
+        // Get current and new page elements (they already exist in the DOM)
         const current = document.getElementById(this.currentPage);
         const newPage = document.getElementById(pageName);
         
-        if (!current || !newPage) return;
+        if (!current || !newPage) {
+            console.error(`Page not found: ${pageName}`);
+            return;
+        }
         
         // Set up the new page for animation
         if (direction === 'right') {
@@ -215,4 +185,4 @@ class PortfolioApp {
 // Initialize the app when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     new PortfolioApp();
-}); 
+});

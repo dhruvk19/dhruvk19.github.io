@@ -26,7 +26,202 @@
 
     <!-- Page Container -->
     <div id="page-container">
-        <!-- Pages will be dynamically loaded here -->
+        <!-- Home Page -->
+        <div class="page home-page active" id="home">
+            <div class="container">
+                <h1>alex rivers</h1>
+                <nav class="nav-menu">
+                    <a data-page="projects" style="color: #d4915d; border-bottom: 3px solid #d4915d;">projects</a>
+                    <a data-page="experience" style="color: #7fb069; border-bottom: 3px solid #7fb069;">experience</a>
+                    <a data-page="about" style="color: #5a9fd4; border-bottom: 3px solid #5a9fd4;">about</a>
+                    <a data-page="resume" style="color: #c75a7e; border-bottom: 3px solid #c75a7e;">resume</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Projects Page -->
+        <div class="page projects-page" id="projects" style="display: none;">
+            <div class="container">
+                <h2>projects</h2>
+                <p class="projects-tagline">at a glance: full-stack development, UI/UX design, product strategy, & digital innovation</p>
+                
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>FinanceFlow - SaaS Platform</h3>
+                        <p>Led the development of a comprehensive financial management platform for small businesses. Built with React, Node.js, and PostgreSQL, serving 15,000+ active users with real-time analytics and automated reporting features.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>MindfulSpace - Meditation App</h3>
+                        <p>Designed and developed a cross-platform meditation app using React Native. Features include guided sessions, progress tracking, and social features. Achieved 4.8/5 star rating with 100k+ downloads across iOS and Android.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>TechCorp Design System</h3>
+                        <p>Created a comprehensive design system for a Fortune 500 technology company. Implemented 200+ reusable components in React and Figma, reducing development time by 45% across 12 product teams and ensuring brand consistency.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>EcoTrack - Carbon Footprint Tracker</h3>
+                        <p>Full-stack web application helping individuals and companies track their environmental impact. Features API integrations with transportation and energy providers, data visualization with D3.js, and gamification elements.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>EventHub - Community Platform</h3>
+                        <p>Built a social platform for local event discovery and networking. Implemented real-time messaging, location-based event recommendations, and integrated payment processing. Scaled to support 50,000+ monthly active users.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>CodeMentor - Learning Platform</h3>
+                        <p>Developed an interactive coding education platform with live code execution, peer review systems, and AI-powered hints. Used Next.js, WebSocket connections, and Docker containers for isolated code execution environments.</p>
+                    </div>
+                </div>
+                
+                <footer class="page-footer">
+                    <div class="footer-content">
+                        <div class="footer-section">
+                            <h4>Let's Connect</h4>
+                            <p><a href="mailto:alex@alexrivers.dev">alex@alexrivers.dev</a></p>
+                            <p><a href="#">LinkedIn: /in/alexrivers-dev</a></p>
+                            <p><a href="#">GitHub: /alexrivers</a></p>
+                        </div>
+                        <div class="footer-section">
+                            <h4>Currently</h4>
+                            <p>Austin, Texas</p>
+                            <p>Available for projects</p>
+                            <p>Central Time (UTC-6)</p>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>© 2025 Alex Rivers. Built with passion in Austin.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <!-- Experience Page -->
+        <div class="page experience-page" id="experience" style="display: none;">
+            <div class="container">
+                <h2>experience</h2>
+                <div class="page-content">
+                    <p style="margin-bottom: 2rem;">Technology moves fast, but thoughtful design is timeless. I write about the intersection of emerging tech, user experience, and the future of digital products. Here are some thoughts from my journey as a creator.</p>
+                    
+                    <div class="blog-post">
+                        <h3>Why Every Developer Should Learn Design Thinking</h3>
+                        <div class="date">July 20, 2025</div>
+                        <p>After years of building products that technically worked but failed to connect with users, I discovered that the best code is written with empathy. Design thinking isn't just for designers—it's a mindset that makes us better problem solvers.</p>
+                    </div>
+
+                    <div class="blog-post">
+                        <h3>The Psychology of Loading States</h3>
+                        <div class="date">June 15, 2025</div>
+                        <p>Those three seconds while your app loads? They're make-or-break moments. How we handle waiting experiences can determine whether users stay engaged or bounce. Here's what I've learned from A/B testing dozens of loading patterns.</p>
+                    </div>
+
+                    <div class="blog-post">
+                        <h3>Building Products People Actually Want</h3>
+                        <div class="date">May 28, 2025</div>
+                        <p>The graveyard of unused apps is vast. After shipping products that nobody used (despite perfect code), I learned that validation beats perfection every time. Start with the problem, not the solution.</p>
+                    </div>
+
+                    <div class="blog-post">
+                        <h3>The Art of Saying No to Features</h3>
+                        <div class="date">May 10, 2025</div>
+                        <p>Every feature request feels important when you're in the moment. But the best products aren't defined by what they do—they're defined by what they don't do. Here's my framework for feature decisions that actually matter.</p>
+                    </div>
+
+                    <div class="blog-post">
+                        <h3>Remote Work Changed How I Code</h3>
+                        <div class="date">April 22, 2025</div>
+                        <p>Working from my home office for the past three years taught me that good code isn't just about functionality—it's about communication. When you can't tap someone on the shoulder, every variable name matters.</p>
+                    </div>
+
+                    <div class="blog-post">
+                        <h3>Why I Switched from React to... More React</h3>
+                        <div class="date">April 5, 2025</div>
+                        <p>I spent months exploring Vue, Svelte, and solid.js, convinced the grass was greener. Spoiler alert: every framework has trade-offs. Here's why I came back to React and what I learned along the way.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div class="page about-page" id="about" style="display: none;">
+            <div class="container">
+                <h2>about</h2>
+                <div class="page-content">
+                    <div class="about-section">
+                        <p style="margin-bottom: 2rem;">Hey there! I'm Alex, a full-stack developer and product designer who gets excited about building things that people actually want to use. Currently based in Austin, Texas, where I spend my days turning complex problems into simple, elegant digital solutions.</p>
+                        
+                        <p style="margin-bottom: 2rem;">My journey started somewhat accidentally—I was studying economics in college but kept getting distracted by how terribly designed most university websites were. One thing led to another, and I found myself teaching myself HTML and CSS at 2 AM instead of studying for my macro exam. Best life decision ever.</p>
+                        
+                        <p>Over the past eight years, I've had the privilege of working with everyone from anxious startup founders to Fortune 500 executives, helping them translate their wildest ideas into digital products that actually work. I've learned that the best technology is invisible—it just helps people get things done without getting in the way.</p>
+                    </div>
+                    
+                    <div class="about-section">
+                        <h3 style="color: #5a9fd4; font-size: 1.5rem; margin: 0 0 1.5rem 0;">What I Do</h3>
+                        <div class="about-skills">
+                            <div class="skill-item">
+                                <p><strong>Frontend Magic:</strong> React, TypeScript, Next.js, Vue.js, and whatever new framework the internet is excited about this week</p>
+                            </div>
+                            <div class="skill-item">
+                                <p><strong>Backend Systems:</strong> Node.js, Python, PostgreSQL, MongoDB, AWS, and the occasional venture into DevOps territory</p>
+                            </div>
+                            <div class="skill-item">
+                                <p><strong>Design & UX:</strong> Figma, user research, prototyping, and the gentle art of making complicated things feel simple</p>
+                            </div>
+                            <div class="skill-item">
+                                <p><strong>Product Strategy:</strong> Turning "wouldn't it be cool if..." into "here's exactly how we'll build and measure this"</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-section">
+                        <h3 style="color: #5a9fd4; font-size: 1.5rem; margin: 0 0 1.5rem 0;">When I'm Not Coding</h3>
+                        <p style="margin-bottom: 1rem;">You'll find me exploring Austin's food truck scene (current obsession: Korean-Mexican fusion), attempting to keep my houseplants alive (success rate: improving), or disappearing into national parks with my camera and hiking boots.</p>
+                        
+                        <p style="margin-bottom: 1rem;">I'm also slightly obsessed with mechanical keyboards (currently typing on a custom 60% with Cherry MX Blues), pour-over coffee methods, and collecting vinyl records of bands that probably have fewer monthly Spotify listeners than my last app had users.</p>
+                        
+                        <p>I believe the best products come from diverse teams, honest feedback, and the willingness to throw away your first three ideas because the fourth one is always better. Let's build something amazing together.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resume/Contact Page -->
+        <div class="page resume-page" id="resume" style="display: none;">
+            <div class="container">
+                <h2>resume</h2>
+                <div class="page-content">
+                    <p style="margin-bottom: 2rem;">I love connecting with fellow creators, potential collaborators, and anyone who gets excited about building cool stuff. Whether you have a project in mind, want to chat about the latest in tech, or just want to say hi—I'd love to hear from you!</p>
+                    
+                    <div style="margin-bottom: 3rem; background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 8px;">
+                        <h3 style="color: #ffffff; font-size: 1.3rem; margin-bottom: 1.5rem;">Let's Connect</h3>
+                        <p style="margin-bottom: 0.8rem;"><strong>Email:</strong> alex@alexrivers.dev</p>
+                        <p style="margin-bottom: 0.8rem;"><strong>LinkedIn:</strong> /in/alexrivers-dev</p>
+                        <p style="margin-bottom: 0.8rem;"><strong>GitHub:</strong> /alexrivers</p>
+                        <p style="margin-bottom: 0.8rem;"><strong>Twitter:</strong> @alexbuilds</p>
+                        <p style="margin-bottom: 0.8rem;"><strong>Location:</strong> Austin, Texas</p>
+                        <p><strong>Timezone:</strong> Central Time (UTC-6)</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: #ffffff; font-size: 1.3rem; margin-bottom: 1rem;">What I'm Looking For</h3>
+                        <p style="margin-bottom: 1rem;">🚀 <strong>Exciting Projects:</strong> Especially in fintech, healthtech, or sustainability</p>
+                        <p style="margin-bottom: 1rem;">💡 <strong>Collaboration:</strong> Always open to partnering with designers, developers, and entrepreneurs</p>
+                        <p style="margin-bottom: 1rem;">🎯 <strong>Mentoring:</strong> Happy to chat with junior developers or career changers</p>
+                        <p style="margin-bottom: 2rem;">☕ <strong>Coffee Chats:</strong> If you're in Austin, let's grab coffee and talk shop!</p>
+                    </div>
+                    
+                    <form class="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="What's this about?">
+                        <textarea name="message" placeholder="Tell me about your project, idea, or just say hello! I typically respond within 24 hours." rows="6" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+
+                    <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">
+                        <strong>Response Time:</strong> I typically respond to emails within 24 hours during weekdays. For urgent matters, feel free to reach out on LinkedIn or Twitter for a faster response!
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script type="module" src="js/app.js"></script>
