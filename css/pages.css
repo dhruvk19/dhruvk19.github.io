@@ -19,6 +19,10 @@
     letter-spacing: -0.02em;
 }
 
+.name {
+    padding-top: 5rem;
+}
+
 .nav-menu {
     display: flex;
     flex-direction: column;
