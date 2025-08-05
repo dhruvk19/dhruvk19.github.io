@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="images/x-icon" href="images/page-favicon.jpeg" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
+    <script src="https://kit.fontawesome.com/cfc9c727ff.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+    <title>Dhruv's Portfolio</title>
+</head>
+<body>
+    <div class="skip" ><a href="#main" tabindex="1" >Skip to Main Content</a></div>
+    <!-- nav bar -->
+    <div class = "nav">
+        <div class = "flex">
+            <img src="images/page-favicon.jpeg" alt="" class="logo" onclick=redirectHome()>
+            <!-- <div class="logo">
+                <a href="index.html"><img class = "logo" src="images/page-favicon.jpeg" alt=""></a>
+            </div> -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" class = "curr">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="Dhruv_Kapur_Resume.pdf" target = "_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="main">
+        <h1 id = "section1" >Projects</h1>
+        <div class="projects">
+
+            <div>
+                <h2>Discord User Bot</h2>
+                
+                <ul>
+                    <li>
+                        Developed Discord bot utilizing <span class="tech-skills">discord.py API</span> to enhance communication and organization within gaming community
+                    </li>
+                    <li>Recorded commands in real-time sent by members and tracked their reactions to messages in specified channels</li>
+                    <li>Deployed bot on a <span class="tech-skills">virtual private server (VPS)</span> to ensure uninterrupted, low-latency availability and secure data storage design</li>
+                    <li>Utilized by roughly <span class="tech-skills">300 users</span> on discord server streamlining event scheduling and gaming sessions</li>
+                </ul>
+                <p><span class="tech-skills">python</span></p>
+                <!-- <i class="fa-brands fa-github fa-2xl temp" style="color: #66b2b2; cursor: pointer;" onclick="redirectToDiscordBot()"></i> -->
+                <a href="https://github.com/dhruvk19/ClashBot" target="_blank" style="text-decoration: none;">
+                    <i class="fa-brands fa-github fa-2xl temp" style="color: #66b2b2; cursor: pointer;"></i>
+                </a>
+            </div>
+            <div>
+                <h2>Web-Based Office Hours Queue Management System</h2>
+                <ul>
+                    <li>Developed a web server for an office hours queue as part of a team project, implementing a <span class="tech-skills">REST API</span> in C++ using dynamic memory management and linked lists, showcasing proficiency in container ADTs and data structures.</li>
+                    <li>Designed and implemented a doubly linked list data structure with an iterator interface in C++, ensuring memory leak-free code, backed up with <span class="tech-skills">Git</span> command-line usage</li>
+                    <li>Tested and debugged REST API, including error handling and response formatting, and integrated it into a real web server environment, gaining practical experience in web application development and server-client interaction.</li>
+                </ul>
+                <p><span class="tech-skills">C++</span></p>
+            </div>
+            
+            <div>
+                <h2>Machine Learning Text Classification</h2>
+                <ul>
+                    <li>Designed and implemented a C++ application for text classification with supervised <span class="tech-skills">machine learning techniques</span>.</li>
+                    <li>Trained classifier on labeled datasets, extracted from large datasets of Piazza posts in CSV format, and calculated log-probability scores for accurate topic predictions</li>
+                    <li>Provided debugging options to display information about training data, <span class="tech-skills">classifier</span> parameters, and prediction results</li>
+                    <li>Achieved accurate classification results on test data, contributing to development of text classification tool with an accuracy of <span class="tech-skills">87%</span></li>
+                </ul>
+                <p><span class="tech-skills">C++</span></p>
+            </div>
+            <div>
+                <h2>This Website!</h2>
+                <ul>
+                    <li>Planned layout of this website, considering multiple views (mobile, tablet, desktop)</li>
+                    <li>Took advantage of JavaScript to allow quick links from icons</li>
+                    <li>Ensured accessibility for most viewers my passing website through 3 validators <span class="tech-skills">(AxeDev Tools, w3, WaVe)</span>  </li>
+                    <li>Coded in clear and visual content using CSS methods from class and other websites</li>
+                </ul>
+                <p><span class="tech-skills">HTML, CSS, JavaScript</span></p>
+                <!-- <img src="images/github-icon2.png" alt="GitHub Icon" onclick=redirectToSIProject()> -->
+                <i class="fa-brands fa-github fa-2xl temp" style="color: #66b2b2; cursor: pointer;" onclick="redirectToSIProject()"></i>
+            </div>
+            <div>
+                <h2>Euchre (Card Game) Simulation</h2>
+                <ul>
+                    <li>Created an simulation of the card game Euchre</li>
+                    <li>Implemented multiple playing options that can also incorperate computer users to play the game using <span class="tech-skills">artifical intelligence</span> to execute strategical moves</li>
+                    <li>Added various techniques the computer user can use to defeat the human user offering variable difficulty</li>
+                    
+                </ul>
+                <p><span class="tech-skills">C++</span></p>
+            </div>
+            <div>
+                <h2>Computer Vision Editing</h2>
+                <ul>
+                    <li>Built an seam-carving algorithm in C++ that resizes images while preserving most of the quality</li>
+                    <li>Uses context-aware approach on an energy matrix to find a path with the least amount of energy</li>
+                    <li>Optimized with the use of dynamic memory and continual testing and improvement</li>
+                </ul>
+                <p><span class="tech-skills">C++</span></p>
+            </div>
+            <div>
+                <h2>Computing Alaskan Precipitation</h2>
+                <ul>
+                    <li>Estimated Precipitation in Alaska using surface regression using <span class="tech-skills">Julia</span></li>
+                    <li>Sourced and processed databases by National Oceanic and Atmospheric Administration (NOAA) </li>
+                    <li>Applied geometric data splitting, radial basis functions, and LU decomposition for efficient regression</li>
+                </ul>
+                <p><span class="tech-skills">Julia, Jupyter Notebook</span></p>
+            </div>
+            <div>
+                <h2>Segway Optimization</h2>
+                <ul>
+                    <li>Explored <span class="tech-skills">feedback control</span> and dynamic models to balance a segway</li>
+                    <li>Ensured segway controlled balance movements continously as conditions changed using the feedback control implementation</li>
+                    <li>Applied optimization techniques by incorperating ordinary differential equations </li>
+                </ul>
+                <p><span class="tech-skills">Julia, Jupyter Notebook</span></p>
+            </div>
+        </div>
+
+
+    </div>
+    <footer id = "section4">
+        <h2>Contact me</h2>
+        <p><span class="tech-skills">dhruvka@umich.edu</span></p>
+        <div class = "quick-links">
+            <!-- <img src="images/linkedin-icon.png" alt="LinkedIn Icon" onclick=redirectToLinkedIn()>
+            <img src="images/github-icon2.png" alt="GitHub Icon" onclick=redirectToGitHub()>
+            <img src="images/or-icon.png" alt="Open Review Icon" onclick=redirectToOR()> -->
+            <i class="fa-brands fa-linkedin fa-2xl" style="color: #66b2b2; cursor: pointer;" onclick="redirectToLinkedIn()"></i>
+
+            <!-- <img src="images/github-icon2.png" alt="GitHub Icon" onclick=redirectToGitHub()> -->
+            <i class="fa-brands fa-github fa-2xl" style="color: #66b2b2; cursor: pointer;" onclick="redirectToGitHub()"></i>
+            <img src="images/or-icon-new-2.jpeg" alt="Open Review Icon" onclick=redirectToOR() style = "cursor: pointer;">
+        </div>
+        <script src="js/projects_redirect.js"></script>
+        <script src="js/redirect_icon.js"></script>
+        <script src="js/navbar.js"></script>
+        <script src = "js/load.js"></script>
+        <script src = "js/fade_projects.js"></script>
+    </footer>
+    
+</body>
+</html>
