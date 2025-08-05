@@ -6,25 +6,13 @@
     left: 0;
     padding: 30px 40px;
     z-index: 1001;
-    background: rgba(26, 26, 26, 0.95);
+    background: rgba(45, 45, 45, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    height: 90px; /* Fixed height for consistent spacing */
-}
-
-.header.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-.header.subpage {
-    background: rgba(45, 45, 45, 0.95);
+    height: 90px;
 }
 
 .header-title {
@@ -32,8 +20,6 @@
     font-weight: 300;
     color: #ffffff;
     text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 .header-title:hover {
@@ -50,10 +36,8 @@
     text-decoration: none;
     font-size: 18px;
     font-weight: 300;
-    transition: all 0.3s ease;
     position: relative;
     padding-bottom: 3px;
-    cursor: pointer;
 }
 
 .nav a::after {
@@ -63,41 +47,41 @@
     left: 0;
     width: 0;
     height: 2px;
-    transition: width 0.3s ease;
 }
 
 .nav a:hover::after {
     width: 100%;
 }
 
-.nav a[data-page="projects"] {
+/* Navigation link colors */
+.nav a[href*="projects"] {
     color: #d4915d;
 }
 
-.nav a[data-page="projects"]::after {
+.nav a[href*="projects"]::after {
     background-color: #d4915d;
 }
 
-.nav a[data-page="experience"] {
+.nav a[href*="experience"] {
     color: #7fb069;
 }
 
-.nav a[data-page="experience"]::after {
+.nav a[href*="experience"]::after {
     background-color: #7fb069;
 }
 
-.nav a[data-page="about"] {
+.nav a[href*="about"] {
     color: #5a9fd4;
 }
 
-.nav a[data-page="about"]::after {
+.nav a[href*="about"]::after {
     background-color: #5a9fd4;
 }
 
-.nav a .resume{
+.nav a[href*="Resume"] {
     color: #c75a7e;
 }
 
-.nav a[data-page="resume"]::after {
+.nav a[href*="Resume"]::after {
     background-color: #c75a7e;
-} 
+}

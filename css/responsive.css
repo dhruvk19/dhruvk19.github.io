@@ -35,14 +35,14 @@
         padding-top: 180px; /* More padding for mobile due to taller header */
     }
 
-    .projects-page h2,
-    .experience-page h2,
-    .about-page h2,
-    .resume-page h2 {
+    .projects-page h1,
+    .experience-page h1,
+    .about-page h1,
+    .resume-page h1 {
         font-size: 3rem;
     }
 
     .project-grid {
         grid-template-columns: 1fr;
     }
-} 
+}

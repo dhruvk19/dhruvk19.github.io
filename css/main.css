@@ -10,14 +10,14 @@ body {
     color: #ffffff;
     line-height: 1.6;
     overflow-x: hidden;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -38,4 +38,4 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.5);
-} 
+}
