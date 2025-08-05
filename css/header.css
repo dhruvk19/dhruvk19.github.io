@@ -94,7 +94,7 @@
     background-color: #5a9fd4;
 }
 
-.nav a[data-page="resume"] {
+.nav a .resume{
     color: #c75a7e;
 }
 
