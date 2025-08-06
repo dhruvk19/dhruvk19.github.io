@@ -171,3 +171,9 @@ a:active {
 .about-page .footer-section h3 {
     color: #5a9fd4;
 }
+
+/* generic */
+.tech-skills{
+    font-family: 'Courier New', monospace;
+    /* color: #64FFDA; */
+}
