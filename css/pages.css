@@ -39,6 +39,7 @@
     opacity: 0;
     transform: translateY(-30px);
     animation: slideInDown 0.8s ease forwards;
+    animation-fill-mode: both; /* Ensures animation state is maintained */
 }
 
 .nav-menu a:hover {
