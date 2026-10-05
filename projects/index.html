@@ -55,39 +55,81 @@
                         <h2>Recipe Rating Predictor - food.com </h2>
                         <p>Visit Results: <a href="https://recipe.dhruvk19.com" target="_blank"><span class="underline">> <span class="tech-skills">recipe-analysis</span></span> </a></p>
                         <br>
-                        <p>Developed Discord bot utilizing <span class="tech-skills">discord.py API</span> to enhance communication and organization within gaming community of 300+ members. Hosted it on a virtual private server (VPS) for 24/7 uptime.</p>
+                        <p>Built a regression model to predict recipe ratings from 83,000+ food.com recipes and 730,000+ user reviews. Cleaned and merged the datasets, then ran exploratory analysis, which showed that recipes with fewer steps and shorter prep times tend to be rated higher. Engineered features such as tag count and calories per ingredient, and tuned a <span class="tech-skills">Random Forest Regressor</span>, improving MSE over a linear regression baseline (0.501 → 0.492).</p>
                         <br>
-                        <span class="tech-skills">Python</span>
+                        <span class="tech-skills">Python, pandas, scikit-learn</span>
                     </div>
                     <div class="project-card">
                         <h2>Web-Based Office Hours Queue Management System</h2>
                         <p>
                             Developed a high-performance <span class="tech-skills">REST API</span> in <span class="tech-skills">C++</span> for managing student office hours queues, implementing custom doubly-linked list data structures with full iterator support. Built careful dynamic memory management, integrated comprehensive error handling. The system demonstrates low-level programming expertise while solving a real-world coordination problem for academic environments.
                         </p>
+                        <br>
+                        <span class="tech-skills">C++</span>
                     </div>
                     <div class="project-card">
                         <h2>Machine Learning Text Classification</h2>
                         <p>
                             Created an intelligent text classifier in <span class="tech-skills">C++</span> that achieved 87% accuracy on Piazza post categorization. Implemented supervised learning algorithms with log-probability scoring, processing large CSV datasets to train the model. Built debugging tools to visualize training data and classifier parameters, showcasing both machine learning fundamentals and systems programming skills in a performance-critical application.
                         </p>
+                        <br>
+                        <span class="tech-skills">C++</span>
                     </div>
                     <div class="project-card">
                         <h2>Euchre (Card Game) Simulation</h2>
                         <p>
-                            
+                            Built a complete, playable Euchre card game in <span class="tech-skills">C++</span> around <span class="tech-skills">Card</span>, <span class="tech-skills">Pack</span>, and <span class="tech-skills">Player</span> abstract data types. Used inheritance and polymorphism to support both a strategy-driven AI player and an interactive human player behind one abstract interface. The game engine handles shuffling and dealing, two-round trump bidding, trick-taking logic, and scoring across hands, and is backed by unit tests written to catch bugs in faulty implementations.
                         </p>
+                        <br>
+                        <span class="tech-skills">C++</span>
                     </div>
                     <div class="project-card">
                         <h2>Computer Vision Editing</h2>
                         <p>
-                            
+                            Implemented content-aware image resizing with the <span class="tech-skills">seam carving</span> algorithm in <span class="tech-skills">C++</span>. Computed pixel energy and cumulative cost matrices to find and remove the lowest-energy seams, shrinking images while preserving their important features. Built <span class="tech-skills">Matrix</span> and <span class="tech-skills">Image</span> ADTs on 1D arrays using pointer arithmetic, with PPM file I/O and a command-line resize tool.
                         </p>
+                        <br>
+                        <span class="tech-skills">C++</span>
+                    </div>
+                    <div class="project-card">
+                        <h2>Statistical Analysis Tool</h2>
+                        <p>
+                            Wrote a command-line statistics program in <span class="tech-skills">C++</span> that reads CSV/TSV datasets and reports descriptive statistics (mean, median, standard deviation, percentiles). It also compares two groups using bootstrap-resampled 95% confidence intervals for the difference in means. Verified each function with thorough unit tests.
+                        </p>
+                        <br>
+                        <span class="tech-skills">C++</span>
+                    </div>
+                    <div class="project-card">
+                        <h2>Insta485 - Instagram Clone</h2>
+                        <p>
+                            Built an Instagram clone in three stages: a templated static site generator, then a server-side dynamic app with <span class="tech-skills">Flask</span>, <span class="tech-skills">Jinja2</span>, and <span class="tech-skills">SQLite</span> (accounts, sessions, posts, follows), and finally a client-side <span class="tech-skills">React</span> single-page app backed by an authenticated <span class="tech-skills">REST API</span>. The React front end supports infinite scroll, liking and double-click-to-like, and adding or deleting comments, all without page reloads.
+                        </p>
+                        <br>
+                        <span class="tech-skills">Python, Flask, SQLite, React, JavaScript</span>
+                    </div>
+                    <div class="project-card">
+                        <h2>MapReduce Framework & Search Engine</h2>
+                        <p>
+                            Built a distributed <span class="tech-skills">MapReduce</span> framework in <span class="tech-skills">Python</span> with a multi-threaded Manager and Workers that communicate over TCP, use UDP heartbeats to detect failed Workers, and reassign their tasks so jobs still finish. Then built a scalable search engine on top: a MapReduce pipeline that produces a segmented inverted index with <span class="tech-skills">tf-idf</span> scores, index servers exposing REST APIs, and a Flask search interface that ranks results by tf-idf similarity combined with <span class="tech-skills">PageRank</span>.
+                        </p>
+                        <br>
+                        <span class="tech-skills">Python, Flask, sockets, threading</span>
+                    </div>
+                    <div class="project-card">
+                        <h2>Robotic Mapping with LiDAR</h2>
+                        <p>
+                            Processed large LiDAR point-cloud datasets with matrix operations in <span class="tech-skills">Julia</span> to build maps for robot navigation. Applied translation, rotation, and scaling as affine transformations in <span class="tech-skills">homogeneous coordinates</span> to move measurements between coordinate frames.
+                        </p>
+                        <br>
+                        <span class="tech-skills">Julia</span>
                     </div>
                     <div class="project-card">
                         <h2>Computing Alaskan Precipitation</h2>
                         <p>
-                            
+                            Performed a 3D surface regression on NOAA's gridded precipitation data to estimate July 2020 rainfall at any longitude/latitude in Alaska. Wrote LU-factorization-based <span class="tech-skills">least squares</span> solvers (forward and back substitution) from scratch and fit the data with radial basis function models.
                         </p>
+                        <br>
+                        <span class="tech-skills">Julia</span>
                     </div>
                     <div class="project-card">
                         <h2>V1 of dhruvk19.com</h2>
@@ -104,8 +146,10 @@
                     <div class="project-card">
                         <h2>Segway Optimization</h2>
                         <p>
-                            
+                            Balanced and drove a simulated Segway using optimization-based control. Modeled the cart and Segway as discrete-time linear systems (x<sub>k+1</sub> = Ax<sub>k</sub> + Bu<sub>k</sub>) and computed minimum-energy control inputs by solving underdetermined systems with <span class="tech-skills">minimum-norm least squares</span>. Compared open-loop control with feedback control that re-plans from the measured state to reject disturbances.
                         </p>
+                        <br>
+                        <span class="tech-skills">Julia</span>
                     </div>
                 </div>
                 
@@ -125,7 +169,7 @@
                         </div>
                     </div>
                     <div class="footer-bottom">
-                        <p>© 2025 Dhruv Kapur. Built with passion in Ann Arbor.</p>
+                        <p>© 2026 Dhruv Kapur. Built with passion in Ann Arbor.</p>
                     </div>
                 </footer>
             </div>

@@ -17,15 +17,21 @@ a:active {
 }
 
 /* Project Grid and Cards */
+/* Masonry layout: cards stack directly under each other in each column */
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    columns: 300px;
+    column-gap: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 .project-card {
+    /* inline-block keeps the bottom margin from spilling into the top of the next column */
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    break-inside: avoid;
+    margin-bottom: 2rem;
     background: rgba(212, 145, 93, 0.1);
     padding: 2rem;
     border-radius: 8px;
