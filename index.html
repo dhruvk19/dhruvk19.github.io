@@ -3,52 +3,391 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhruv Kapur - Portfolio</title>
-    <meta name="description" content="Full-stack developer and computer science student at University of Michigan, specializing in web development, machine learning, and system design.">
-    <meta property="og:title" content="Dhruv Kapur - Full-Stack Developer & CS Student">
-    <meta property="og:description" content="Explore my projects, experience, and journey in software engineering and computer science.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dhruvk19.com/">
-    
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/pages.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <title>Dhruv Kapur | Software Engineer &amp; Computer Engineering Student at Michigan</title>
+    <meta name="description" content="Dhruv Kapur is a Computer Engineering graduate student at the University of Michigan and former NetApp software engineering intern, working across cloud systems, research, and full-stack development.">
+    <meta name="author" content="Dhruv Kapur">
+    <meta name="theme-color" content="#121212">
+    <link rel="canonical" href="https://dhruvk19.com/">
 
-    <!-- Favicon -->
+    <!-- Open Graph / social previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Dhruv Kapur">
+    <meta property="og:url" content="https://dhruvk19.com/">
+    <meta property="og:title" content="Dhruv Kapur | Software Engineer &amp; CE Student at Michigan">
+    <meta property="og:description" content="Cloud systems, research, and full-stack projects by Dhruv Kapur, Computer Engineering graduate student at the University of Michigan.">
+    <meta property="og:image" content="https://dhruvk19.com/media/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="dhruv kapur. Software engineer and Computer Engineering student at the University of Michigan">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dhruv Kapur | Software Engineer &amp; CE Student at Michigan">
+    <meta name="twitter:description" content="Cloud systems, research, and full-stack projects by Dhruv Kapur.">
+    <meta name="twitter:image" content="https://dhruvk19.com/media/og-image.png">
+
+    <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon/favicon-16x16.png">
     <link rel="shortcut icon" href="/media/favicon/favicon.ico">
-
-    <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" href="/media/favicon/apple-touch-icon.png">
-
-    <!-- Android Web App Manifest -->
     <link rel="manifest" href="/media/favicon/site.webmanifest">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Structured data for search engines -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dhruv Kapur",
+        "url": "https://dhruvk19.com/",
+        "image": "https://dhruvk19.com/media/og-image.png",
+        "jobTitle": "Software Engineer",
+        "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Michigan"
+        },
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Michigan"
+        },
+        "knowsAbout": ["Cloud computing", "Distributed systems", "Computer vision", "Embedded systems", "Data privacy", "Full-stack web development", "Machine learning"],
+        "sameAs": [
+            "https://www.linkedin.com/in/dhruvk19/",
+            "https://github.com/dhruvk19",
+            "https://scholar.google.com/citations?user=aaqu34EAAAAJ",
+            "https://openreview.net/profile?id=~Dhruv_Kapur1",
+            "https://dl.acm.org/profile/99661230705"
+        ]
+    }
+    </script>
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <!-- Header Navigation -->
-    <!-- <header class="header">
-        <a class="header-title" href="/">dhruv kapur</a>
-    </header> -->
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Page Container -->
-    <div id="page-container">
-        <!-- Home Page -->
-        <div class="page home-page active" id="home">
-            <div class="container">
-                <h1 class='name'>dhruv kapur.</h1>
-                <nav class="nav-menu">
-                    <a href="/projects/" style="color: #d4915d; border-bottom: 3px solid #d4915d;">projects</a>
-                    <a href="/experience/" style="color: #7fb069; border-bottom: 3px solid #7fb069;">experience</a>
-                    <a href="/about/" style="color: #5a9fd4; border-bottom: 3px solid #5a9fd4;">about</a>
-                    <a href="/Dhruv_Kapur_Resume.pdf" style="color: #c75a7e; border-bottom: 3px solid #c75a7e;" target="_blank">resume</a>
-                </nav>
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+            <a class="nav-brand" href="#top">dhruv kapur</a>
+            <ul class="nav-links">
+                <li><a href="#about" data-accent="blue">about</a></li>
+                <li><a href="#experience" data-accent="green">experience</a></li>
+                <li><a href="#research" data-accent="yellow">research</a></li>
+                <li><a href="#projects" data-accent="orange">projects</a></li>
+                <li><a href="#contact" data-accent="pink">contact</a></li>
+                <li><a href="/Dhruv_Kapur_Resume.pdf" data-accent="pink" target="_blank" rel="noopener">resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- Intro -->
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="wrap">
+                <p class="eyebrow">software engineer · ann arbor, mi</p>
+                <h1 class="hero-title" id="hero-title">Dhruv Kapur<span class="dot">.</span></h1>
+                <p class="hero-lede">
+                    Graduate student at the <strong>University of Michigan</strong> building where AI agents meet real systems, from a Model Context Protocol server that lets LLMs run cloud infrastructure commands to network protocols, distributed systems, and machine learning models.
+                </p>
+                <p class="hero-sub">
+                    Two-time software engineering intern at <strong>NetApp</strong> · NeurIPS 2023 co-author · B.S. Computer Science, Summa Cum Laude
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="/Dhruv_Kapur_Resume.pdf" target="_blank" rel="noopener">View resume</a>
+                    <a class="btn" href="mailto:dhruvka@umich.edu">Email me</a>
+                    <a class="btn" href="https://github.com/dhruvk19" target="_blank" rel="noopener">GitHub</a>
+                    <a class="btn" href="https://www.linkedin.com/in/dhruvk19/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a class="btn" href="https://scholar.google.com/citations?user=aaqu34EAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <script type="module" src="js/app.js"></script>
+        <!-- About -->
+        <section class="section accent-blue" id="about" aria-labelledby="about-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="section-num">01</p>
+                    <h2 id="about-title">about</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>
+                            Hi! I'm Dhruv, a graduate student at the University of Michigan pursuing a Master's in Computer Engineering, focused on embedded systems and computer vision. I earned my Bachelor's in Computer Science at Michigan, with a minor in User Experience Design.
+                        </p>
+                        <p>
+                            My work spans cloud infrastructure and research. At NetApp, I've built tooling and infrastructure for Azure NetApp Files and Google Cloud NetApp Volumes. My research in data privacy began during my first internship at Knexus Research Corporation and led to a NeurIPS 2023 Datasets &amp; Benchmarks paper.
+                        </p>
+                        <h3 class="subhead">Relevant coursework</h3>
+                        <ul class="course-list">
+                            <li><span>Web Systems</span><span class="mono">React.js, Python, SQL</span></li>
+                            <li><span>Data Science &amp; Machine Learning</span><span class="mono">Python</span></li>
+                            <li><span>Artificial Intelligence</span><span class="mono">Python</span></li>
+                            <li><span>Data Structures &amp; Algorithms</span><span class="mono">C++</span></li>
+                            <li><span>Parallel Programming with GPUs</span><span class="mono">C, CUDA</span></li>
+                            <li><span>Mobile App Development</span><span class="mono"></span></li>
+                            <li><span>Web Design, Development &amp; Accessibility</span><span class="mono">HTML, CSS, JavaScript</span></li>
+                        </ul>
+                    </div>
+                    <aside class="edu-card reveal" aria-label="Education">
+                        <h3 class="subhead">Education</h3>
+                        <div class="edu-item">
+                            <p class="edu-school">University of Michigan</p>
+                            <p class="edu-degree">Master's, Computer Engineering</p>
+                            <p class="edu-detail">Embedded Systems &amp; Computer Vision</p>
+                        </div>
+                        <div class="edu-item">
+                            <p class="edu-school">University of Michigan</p>
+                            <p class="edu-degree">B.S. Computer Science</p>
+                            <p class="edu-detail">Minor in User Experience Design</p>
+                            <p class="edu-detail">Summa Cum Laude · Dean's Honor List · University Honors</p>
+                        </div>
+                        <p class="edu-gpa"><span class="mono">GPA</span> 4.00 / 4.00</p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section accent-green" id="experience" aria-labelledby="experience-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="section-num">02</p>
+                    <h2 id="experience-title">experience</h2>
+                </div>
+                <ol class="timeline">
+                    <li class="role reveal">
+                        <div class="role-meta">
+                            <time>Jun – Aug 2026</time>
+                            <p class="role-place">San Jose, CA</p>
+                        </div>
+                        <div class="role-body">
+                            <h3>Cloud Software Engineering Intern <span class="at">@ NetApp</span></h3>
+                            <p class="role-team">Azure NetApp Files</p>
+                            <ul>
+                                <li>Built an aggregate relocation proof of concept for upgrading ONTAP <a href="https://docs.netapp.com/us-en/ontap/concepts/high-availability-pairs-concept.html" target="_blank" rel="noopener">HA pairs</a>, reducing failover upgrade times by ~30x (30 min → ~1 min).</li>
+                                <li>Worked on CIT coverage for the NFS over TLS protocol, and NetApp <a href="https://docs.netapp.com/us-en/flexpod/hybrid-cloud/cloud-fabricpool_fabricpool.html" target="_blank" rel="noopener">FabricPool</a> and <a href="https://www.netapp.com/snapmirror-data-replication/" target="_blank" rel="noopener">SnapMirror</a> on Oracle Cloud Infrastructure (OCI).</li>
+                            </ul>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>Azure NetApp Files</li><li>ONTAP</li><li>NFS over TLS</li><li>Oracle Cloud Infrastructure</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="role reveal">
+                        <div class="role-meta">
+                            <time>Jun – Aug 2025</time>
+                        </div>
+                        <div class="role-body">
+                            <h3>Software Engineering Intern <span class="at">@ NetApp</span></h3>
+                            <p class="role-team">Google Cloud NetApp Volumes</p>
+                            <ul>
+                                <li>Worked on integrating the Google Cloud Console into the IDE.</li>
+                                <li>Developed a <a href="https://www.anthropic.com/news/model-context-protocol" target="_blank" rel="noopener">Model Context Protocol</a> server that lets developers use an LLM to execute commands and configurations efficiently, following cloud infrastructure standards.</li>
+                            </ul>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>TypeScript</li><li>Python</li><li>JavaScript</li><li>HTML/CSS</li><li>Google Cloud Platform</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="role reveal">
+                        <div class="role-meta">
+                            <time>Jan 2024 – Apr 2025</time>
+                        </div>
+                        <div class="role-body">
+                            <h3>Privacy Research <span class="at">@ University of Michigan</span></h3>
+                            <p class="role-team"><a href="https://midas.umich.edu/" target="_blank" rel="noopener">Michigan Institute for Data and AI in Society (MIDAS)</a> · with postdoctoral researcher Jeremy Seeman</p>
+                            <ul>
+                                <li>Analyzed de-identification algorithms in depth, continuing my NeurIPS 2023 work in differential privacy.</li>
+                                <li>Contributed a paper to the NIST Collaborative Research Cycle Explanatory Workshop (see <a href="#research">research</a>).</li>
+                            </ul>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>Python</li><li>pandas</li><li>Matplotlib</li><li>Seaborn</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="role reveal">
+                        <div class="role-meta">
+                            <time>May – Aug 2023</time>
+                        </div>
+                        <div class="role-body">
+                            <h3>Research Intern <span class="at">@ Knexus Research Corporation</span></h3>
+                            <p class="role-team">NIST Collaborative Research Cycle</p>
+                            <ul>
+                                <li>Explored the behavior of data de-identification across 450+ de-identified data samples in the NIST Collaborative Research Cycle program.</li>
+                                <li>Compiled the findings into a report for the NeurIPS 2023 Datasets &amp; Benchmarks Track.</li>
+                            </ul>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>Python</li><li>pandas</li><li>Matplotlib</li><li>Seaborn</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Research -->
+        <section class="section accent-yellow" id="research" aria-labelledby="research-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="section-num">03</p>
+                    <h2 id="research-title">research</h2>
+                </div>
+                <div class="pub-list">
+                    <article class="pub reveal">
+                        <p class="pub-venue">NeurIPS 2023 · Datasets &amp; Benchmarks Track</p>
+                        <h3>Diverse Community Data for Benchmarking Data Privacy Algorithms</h3>
+                        <p class="pub-authors">Sen, A., Task, C., <strong>Kapur, D.</strong>, Howarth, G. S., &amp; Bhagat, K.</p>
+                        <p class="pub-desc">Thirty-seventh Conference on Neural Information Processing Systems.</p>
+                        <ul class="pub-links">
+                            <li><a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/a15032f8199511ced4d7a8e2bbb487a5-Paper-Datasets_and_Benchmarks.pdf" target="_blank" rel="noopener">Paper</a></li>
+                            <li><a href="https://neurips.cc/virtual/2023/poster/73719" target="_blank" rel="noopener">Poster</a></li>
+                            <li><a href="https://openreview.net/forum?id=1ODvxEwsGk" target="_blank" rel="noopener">OpenReview</a></li>
+                            <li><a href="https://arxiv.org/abs/2306.13216" target="_blank" rel="noopener">arXiv</a></li>
+                        </ul>
+                    </article>
+                    <article class="pub reveal">
+                        <p class="pub-venue">NIST Collaborative Research Cycle · Explanatory Workshop</p>
+                        <h3>An Exploratory Meta-Analysis to Identify Outlying Behavior in the NIST Collaborative Research Cycle Archive</h3>
+                        <p class="pub-desc">With Jeremy Seeman, University of Michigan.</p>
+                        <ul class="pub-links">
+                            <li><a href="https://pages.nist.gov/privacy_collaborative_research_cycle/pages/research.html#jeremy" target="_blank" rel="noopener">NIST: Synthetic Data Evaluation</a></li>
+                        </ul>
+                    </article>
+                </div>
+                <ul class="profile-links reveal" aria-label="Research profiles">
+                    <li><a href="https://scholar.google.com/citations?user=aaqu34EAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+                    <li><a href="https://openreview.net/profile?id=~Dhruv_Kapur1" target="_blank" rel="noopener">OpenReview</a></li>
+                    <li><a href="https://dl.acm.org/profile/99661230705" target="_blank" rel="noopener">ACM Digital Library</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section accent-orange" id="projects" aria-labelledby="projects-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="section-num">04</p>
+                    <h2 id="projects-title">projects</h2>
+                </div>
+                <p class="section-tagline">all the way from backend engineering &amp; management to the user's screen :)</p>
+
+                <div class="filters" role="group" aria-label="Filter projects by language">
+                    <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+                    <button type="button" class="filter" data-filter="python" aria-pressed="false">Python</button>
+                    <button type="button" class="filter" data-filter="cpp" aria-pressed="false">C++</button>
+                    <button type="button" class="filter" data-filter="julia" aria-pressed="false">Julia</button>
+                    <button type="button" class="filter" data-filter="web" aria-pressed="false">Web</button>
+                </div>
+
+                <div class="project-grid">
+                    <article class="card reveal" data-tags="python">
+                        <h3>Recipe Rating Predictor</h3>
+                        <p>Built a regression model to predict recipe ratings from 83,000+ food.com recipes and 730,000+ user reviews. Exploratory analysis showed that recipes with fewer steps and shorter prep times tend to be rated higher. Engineered features such as tag count and calories per ingredient, and tuned a Random Forest Regressor, improving MSE over a linear regression baseline (0.501 → 0.492).</p>
+                        <ul class="tags"><li>Python</li><li>pandas</li><li>scikit-learn</li></ul>
+                        <ul class="card-links">
+                            <li><a href="https://recipe.dhruvk19.com" target="_blank" rel="noopener">Results ↗</a></li>
+                            <li><a href="https://github.com/dhruvk19/recipe-analysis" target="_blank" rel="noopener">Code ↗</a></li>
+                        </ul>
+                    </article>
+                    <article class="card reveal" data-tags="python web">
+                        <h3>MapReduce Framework &amp; Search Engine</h3>
+                        <p>Built a distributed MapReduce framework with a multi-threaded Manager and Workers that communicate over TCP, use UDP heartbeats to detect failed Workers, and reassign their tasks so jobs still finish. Then built a search engine on top: a MapReduce pipeline producing a segmented inverted index with tf-idf scores, index servers exposing REST APIs, and a Flask search interface ranking results by tf-idf combined with PageRank.</p>
+                        <ul class="tags"><li>Python</li><li>Flask</li><li>sockets</li><li>threading</li></ul>
+                    </article>
+                    <article class="card reveal" data-tags="python web">
+                        <h3>Insta485: Instagram Clone</h3>
+                        <p>Built an Instagram clone in three stages: a templated static site generator, a server-side dynamic app with Flask, Jinja2, and SQLite (accounts, sessions, posts, follows), and finally a client-side React single-page app backed by an authenticated REST API, with infinite scroll, double-click-to-like, and live comments.</p>
+                        <ul class="tags"><li>Python</li><li>Flask</li><li>SQLite</li><li>React</li><li>JavaScript</li></ul>
+                    </article>
+                    <article class="card reveal" data-tags="python">
+                        <h3>ClashBot</h3>
+                        <p>Developed a Discord bot with the discord.py API to improve communication and organization within a gaming community of 300+ members. Hosted it on a virtual private server (VPS) for 24/7 uptime.</p>
+                        <ul class="tags"><li>Python</li><li>discord.py</li></ul>
+                        <ul class="card-links">
+                            <li><a href="https://github.com/dhruvk19/ClashBot" target="_blank" rel="noopener">Code ↗</a></li>
+                        </ul>
+                    </article>
+                    <article class="card reveal" data-tags="cpp">
+                        <h3>Computer Vision Editing</h3>
+                        <p>Implemented content-aware image resizing with the seam carving algorithm. Computed pixel energy and cumulative cost matrices to find and remove the lowest-energy seams, shrinking images while preserving their important features. Built Matrix and Image ADTs on 1D arrays using pointer arithmetic, with PPM file I/O and a command-line resize tool.</p>
+                        <ul class="tags"><li>C++</li></ul>
+                    </article>
+                    <article class="card reveal" data-tags="cpp">
+                        <h3>Euchre Card Game Simulation</h3>
+                        <p>Built a complete, playable Euchre game around Card, Pack, and Player abstract data types. Used inheritance and polymorphism to support a strategy-driven AI player and an interactive human player behind one interface. The engine handles shuffling and dealing, two-round trump bidding, trick-taking, and scoring, backed by unit tests.</p>
+                        <ul class="tags"><li>C++</li></ul>
+                    </article>
+                    <article class="card reveal" data-tags="cpp">
+                        <h3>Machine Learning Text Classification</h3>
+                        <p>Created a text classifier that achieved 87% accuracy on Piazza post categorization. Implemented supervised learning with log-probability scoring, processing large CSV datasets to train the model, and built debugging tools to visualize training data and classifier parameters.</p>
+                        <ul class="tags"><li>C++</li></ul>
+                    </article>
+                    <article class="card reveal" data-tags="cpp web">
+                        <h3>Office Hours Queue Management System</h3>
+                        <p>Developed a REST API for managing student office hours queues, implementing a custom doubly-linked list with full iterator support, careful dynamic memory management, and comprehensive error handling.</p>
+                        <ul class="tags"><li>C++</li><li>REST API</li></ul>
+                    </article>
+                    <article class="card reveal" data-tags="cpp">
+                        <h3>Statistical Analysis Tool</h3>
+                        <p>Wrote a command-line statistics program that reads CSV/TSV datasets and reports descriptive statistics (mean, median, standard deviation, percentiles), and compares two groups using bootstrap-resampled 95% confidence intervals for the difference in means.</p>
+                        <ul class="tags"><li>C++</li></ul>
+                    </article>
+                    <article class="card reveal" data-tags="julia">
+                        <h3>Segway Optimization</h3>
+                        <p>Balanced and drove a simulated Segway using optimization-based control. Modeled the cart and Segway as discrete-time linear systems (x<sub>k+1</sub> = Ax<sub>k</sub> + Bu<sub>k</sub>) and computed minimum-energy control inputs with minimum-norm least squares, comparing open-loop control with feedback control that rejects disturbances.</p>
+                        <ul class="tags"><li>Julia</li></ul>
+                    </article>
+                    <article class="card reveal" data-tags="julia">
+                        <h3>Computing Alaskan Precipitation</h3>
+                        <p>Performed a 3D surface regression on NOAA's gridded precipitation data to estimate July 2020 rainfall at any longitude/latitude in Alaska. Wrote LU-factorization-based least squares solvers from scratch and fit the data with radial basis function models.</p>
+                        <ul class="tags"><li>Julia</li></ul>
+                    </article>
+                    <article class="card reveal" data-tags="julia">
+                        <h3>Robotic Mapping with LiDAR</h3>
+                        <p>Processed large LiDAR point-cloud datasets with matrix operations to build maps for robot navigation, applying translation, rotation, and scaling as affine transformations in homogeneous coordinates.</p>
+                        <ul class="tags"><li>Julia</li></ul>
+                    </article>
+                    <article class="card card-archive reveal" data-tags="web">
+                        <h3>Previous versions of this site</h3>
+                        <p>Earlier iterations of my portfolio, kept online as snapshots. Information on them is not updated.</p>
+                        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                        <ul class="card-links">
+                            <li><a href="https://v2.dhruvk19.com/" target="_blank" rel="noopener">v2.dhruvk19.com ↗</a></li>
+                            <li><a href="https://v1.dhruvk19.com/" target="_blank" rel="noopener">v1.dhruvk19.com ↗</a></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section accent-pink" id="contact" aria-labelledby="contact-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="section-num">05</p>
+                    <h2 id="contact-title">let's connect</h2>
+                </div>
+                <p class="contact-lede reveal">I'm always happy to talk about cloud systems, research, or new opportunities.</p>
+                <a class="contact-email reveal" href="mailto:dhruvka@umich.edu">dhruvka@umich.edu</a>
+                <ul class="profile-links reveal" aria-label="Profiles">
+                    <li><a href="https://www.linkedin.com/in/dhruvk19/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://github.com/dhruvk19" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=aaqu34EAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+                    <li><a href="/Dhruv_Kapur_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>© <span id="year">2026</span> Dhruv Kapur. Built with passion in Ann Arbor.</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js" defer></script>
 </body>
 </html>
