@@ -20,6 +20,9 @@
     --yellow: #e2c25c;
 
     --accent: var(--text);
+    --header-bg: rgba(18, 18, 18, 0.78);
+
+    color-scheme: dark;
 
     --font-display: 'Fraunces', Georgia, serif;
     --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -29,6 +32,29 @@
     --gutter: 40px;
     --header-h: 64px;
     --radius: 12px;
+}
+
+/* Light theme: set on <html> by the inline script in <head>, toggled by the
+   nav button. Accents are darkened to keep text contrast at WCAG AA. */
+:root[data-theme="light"] {
+    --bg: #faf9f6;
+    --surface: #ffffff;
+    --surface-2: #f0efeb;
+    --border: rgba(0, 0, 0, 0.09);
+    --border-strong: rgba(0, 0, 0, 0.18);
+    --text: #1a1a1a;
+    --text-muted: #4f4f4f;
+    --text-faint: #6b6b6b;
+
+    --orange: #a3552a;
+    --green: #3d7529;
+    --blue: #2c6aa3;
+    --pink: #ad3d67;
+    --yellow: #846810;
+
+    --header-bg: rgba(250, 249, 246, 0.82);
+
+    color-scheme: light;
 }
 
 *,
@@ -114,7 +140,7 @@ strong {
     top: 0;
     z-index: 50;
     height: var(--header-h);
-    background: rgba(18, 18, 18, 0.78);
+    background: var(--header-bg);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid transparent;
@@ -150,6 +176,7 @@ strong {
 
 .nav-links {
     position: relative;
+    margin-left: auto;
 }
 
 .nav-links a {
@@ -204,6 +231,42 @@ strong {
     opacity: var(--ind-o, 0);
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), width 0.35s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.35s ease, opacity 0.25s ease;
     pointer-events: none;
+}
+
+/* light/dark toggle */
+.theme-toggle {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: var(--text-muted);
+    background: transparent;
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--text);
+    border-color: var(--text-muted);
+}
+
+.theme-toggle svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* show the sun in dark mode (switch to light), the moon in light mode */
+.theme-toggle .icon-moon,
+:root[data-theme="light"] .theme-toggle .icon-sun {
+    display: none;
+}
+
+:root[data-theme="light"] .theme-toggle .icon-moon {
+    display: block;
 }
 
 /* ---------- Hero ---------- */
@@ -752,7 +815,12 @@ a:not(.btn):not(.nav-brand):not(.contact-email) {
     }
 
     .nav {
-        gap: 16px;
+        gap: 12px;
+    }
+
+    .theme-toggle {
+        width: 36px;
+        height: 36px;
     }
 
     .nav-brand {

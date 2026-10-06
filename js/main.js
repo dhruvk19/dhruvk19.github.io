@@ -13,6 +13,8 @@
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
 
+    initThemeToggle();
+
     var supportsIO = 'IntersectionObserver' in window;
 
     // Fade sections in as they enter the viewport
@@ -52,6 +54,31 @@
             });
         });
     });
+
+    // Light/dark toggle. The inline script in <head> applies the initial theme;
+    // this remembers the visitor's choice.
+    function initThemeToggle() {
+        var button = document.querySelector('.theme-toggle');
+        if (!button) return;
+        var root = document.documentElement;
+        var meta = document.querySelector('meta[name="theme-color"]');
+
+        function apply(theme) {
+            root.dataset.theme = theme;
+            var next = theme === 'light' ? 'dark' : 'light';
+            button.setAttribute('aria-label', 'Switch to ' + next + ' mode');
+            button.title = 'Switch to ' + next + ' mode';
+            if (meta) meta.content = theme === 'light' ? '#faf9f6' : '#121212';
+        }
+
+        apply(root.dataset.theme === 'light' ? 'light' : 'dark');
+
+        button.addEventListener('click', function () {
+            var theme = root.dataset.theme === 'light' ? 'dark' : 'light';
+            apply(theme);
+            try { localStorage.setItem('theme', theme); } catch (e) {}
+        });
+    }
 
     // Scrollspy: highlights the nav link for the section being read, with a
     // sliding indicator. Handles short sections and the bottom of the page,
@@ -95,7 +122,8 @@
             var link = item.link;
             list.style.setProperty('--ind-x', link.offsetLeft + 'px');
             list.style.setProperty('--ind-w', link.offsetWidth + 'px');
-            list.style.setProperty('--ind-color', getComputedStyle(link).getPropertyValue('--link'));
+            // Reference the variable (not its value) so the color follows theme changes
+            list.style.setProperty('--ind-color', 'var(--' + link.dataset.accent + ')');
             list.style.setProperty('--ind-o', '1');
         }
 
